@@ -179,6 +179,7 @@
   "resolutions": {
     "@babel/runtime": "^7.3.4",
     "node-forge": "^1.0.0",
+    "chore-bump-node-fetch": "^2.6.7",
     "refractor/prismjs": "^1.27.0",
     "jspdf": "^2.3.1",
     "cacache/ssri": "6.0.2",
