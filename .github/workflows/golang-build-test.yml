@@ -73,7 +73,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Install Go
-        uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923 # pin@v3
+        uses: actions/setup-go@30b9ddff1180797dbf0efc06837929f98bdf7af7 # pin@v3
         with:
           go-version: ${{ matrix.go-version }}
       - name: Checkout code
@@ -110,7 +110,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Install Go
-        uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923 # pin@v3
+        uses: actions/setup-go@30b9ddff1180797dbf0efc06837929f98bdf7af7 # pin@v3
         with:
           go-version: ${{ matrix.go-version }}
       - name: Setup gotestsum
@@ -156,7 +156,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Go
-        uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923 # pin@v3
+        uses: actions/setup-go@30b9ddff1180797dbf0efc06837929f98bdf7af7 # pin@v3
         with:
           go-version: ${{ matrix.go-version }}
       - name: Install QEMU
@@ -206,7 +206,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Go
-        uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923 # pin@v3
+        uses: actions/setup-go@30b9ddff1180797dbf0efc06837929f98bdf7af7 # pin@v3
         with:
           go-version: ${{ matrix.go-version }}
       - name: Checkout code

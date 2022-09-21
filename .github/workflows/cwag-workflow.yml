@@ -52,7 +52,7 @@ jobs:
       MAGMA_ROOT: "${{ github.workspace }}"
     steps:
       - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
-      - uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923 # pin@v3
+      - uses: actions/setup-go@30b9ddff1180797dbf0efc06837929f98bdf7af7 # pin@v3
         with:
           go-version: '1.18.3'
       - name: Run golang_before_install.sh script
