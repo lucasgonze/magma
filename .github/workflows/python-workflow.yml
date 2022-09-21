@@ -76,7 +76,7 @@ jobs:
           push: false
           tags: magma/py-lint:latest
       - name: Format and check for leftover changes
-        uses: addnab/docker-run-action@4f65fabd2431ebc8d299f8e5a018d79a769ae185 # pin@v3
+        uses: addnab/docker-run-action@3e77f186b7a929ef010f183a9e24c0f9955ea609 # pin@v3
         with:
           image: magma/py-lint:latest
           options: -u 0 -v ${{ github.workspace }}:/code
