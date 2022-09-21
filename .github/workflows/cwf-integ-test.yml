@@ -96,7 +96,7 @@ jobs:
           pip3 install --upgrade pip
           pip3 install ansible fabric3 jsonpickle requests PyYAML firebase_admin
           vagrant plugin install vagrant-vbguest vagrant-reload vagrant-disksize
-      - uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # pin@v2
+      - uses: actions/download-artifact@076f0f7dd036d87e8e04f5f00d614e790308961b # pin@v2
         with:
           name: docker-images
       - uses: geekyeggo/delete-artifact@b73cb986740e466292a536d0e32e2666c56fdeb3 # pin@v1
