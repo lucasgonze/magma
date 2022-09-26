@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
       # Retrieve Generated artifacts and delete them to keep cache usage low
       - name: Download builds
-        uses: actions/github-script@47f7cf65b5ced0830a325f705cad64f2f58dddf7 # pin@v3.1.0
+        uses: actions/github-script@d4560e157075e2d93aa3022b5b51a42a880f1f93 # pin@v3.1.0
         with:
           script: |
             var artifacts = await github.actions.listWorkflowRunArtifacts({
@@ -72,7 +72,7 @@ jobs:
           done
       - name: Save metadata
         id: save_metadata
-        uses: actions/github-script@47f7cf65b5ced0830a325f705cad64f2f58dddf7 # pin@v3.1.0
+        uses: actions/github-script@d4560e157075e2d93aa3022b5b51a42a880f1f93 # pin@v3.1.0
         with:
           script: |
             var fs = require('fs');
