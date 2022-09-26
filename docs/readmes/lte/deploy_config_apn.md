@@ -49,7 +49,7 @@ edit field and perform a multi-select under the "Access Point Names".
 - For a new subscriber, fill out the fields including the "Access Point Names"
 field (screenshot below shows the view after clicking on the "Add Subscriber"
 button). Once you save the updated or new subscriber information, the APNs
-added to the subscriber profile will show be reflected on the page.
+added to the subscriber profile will be reflected on the page.
 
 ![Adding subscriber with APN](assets/nms/add_apn2subscriber.png)
 

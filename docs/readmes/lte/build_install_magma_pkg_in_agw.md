@@ -65,7 +65,7 @@ hide_title: true
 8. **Restart the magma services**
 
     ```bash
-    sudo service magma@* stop
+    sudo service 'magma@*' stop
     sudo service magma@magmad restart
     ```
 
@@ -74,3 +74,11 @@ hide_title: true
     ```bash
     apt show magma
     ```
+
+10. If you are setting up a production AGW, **check that you haven't installed the debug version**
+
+    ```bash
+    apt show magma | grep "- dev build" && echo "WARNING: DEBUG VERSION DEPLOYED TO PRODUCTION"
+    ```
+
+(Caution: as of this writing the "- dev build" marker is not available for a Bazel build). 

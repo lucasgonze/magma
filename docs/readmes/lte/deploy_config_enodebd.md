@@ -81,6 +81,8 @@ AGW detail view, then hit "Edit" by the RAN configuration. Select the eNodeB
 that you just registered in the multi-select dropdown, then save the update.
 Make sure that transmit is enabled.
 
+Caution: experimenting with RAN parameters will disrupt nearby eNodeBs.
+
 ![Connecting an eNodeB](assets/nms/connect_enb.png)
 
 ### Basic Troubleshooting

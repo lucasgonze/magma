@@ -60,17 +60,13 @@ rootca_cert: /var/opt/magma/tmp/certs/rootCA.pem
 Then restart your services to pick up the config changes:
 
 ```bash
-AGW$ sudo service magma@* stop
+AGW$ sudo service 'magma@*' stop
 AGW$ sudo service magma@magmad restart
 ```
 
 ## Creating and Configuring Your Network
 
-Navigate to your NMS instance, <https://your-org.nms.yourdomain.com>, and log in
-with the superuser credentials you provisioned for this organization. If this
-is a fresh Orchestrator install, you will be prompted to create your first
-network. Otherwise, select "Create Network" from the network selection icon
-at the bottom of the left sidebar.
+Navigate to your NMS instance, <https://your-org.nms.yourdomain.com>, examine the certificate, and log in with the superuser credentials you provisioned for this organization. If this is a fresh Orchestrator install, you will be prompted to create your first network. Otherwise, select "Create Network" from the network selection icon at the bottom of the left sidebar.
 
 ![Creating a network](assets/nms/createnetwork_12.png)
 
