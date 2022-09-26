@@ -26,7 +26,7 @@ jobs:
     if: github.repository_owner == 'magma' || github.event_name == 'workflow_dispatch'
     runs-on: macos-12
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # pin@v3
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v3
       - name: Cache magma-deb-box
         uses: actions/cache@0865c47f36e68161719c5b124609996bb5c40129 # pin@v3
         with:

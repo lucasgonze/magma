@@ -36,7 +36,7 @@ jobs:
       ISSUE_NUMBER: "${{ github.event.number }}"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       # Version is github job run number when running on master
       # Or is branch name when on release branch
       - name: Set Helm chart version
@@ -116,7 +116,7 @@ jobs:
     outputs:
       artifacts: ${{ steps.publish_packages.outputs.artifacts }}
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
         with:
           fetch-depth: 0
       - name: Cache magma-dev-box
@@ -233,7 +233,7 @@ jobs:
       MAGMA_VERSION: ${{ needs.agw-build.outputs.magma_version }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
         with:
           fetch-depth: 0
       - uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # pin@v2
@@ -291,7 +291,7 @@ jobs:
     env:
       MAGMA_ROOT: "${{ github.workspace }}"
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - name: Run apt-get update
         run: sudo apt-get update
       - uses: actions/setup-python@7f80679172b057fc5e90d70d197929d454754a5a # pin@v2
@@ -372,7 +372,7 @@ jobs:
       MAGMA_ROOT: "${{ github.workspace }}"
       DOCKER_BUILDKIT: 1
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - name: Run agw docker compose
         id: agw-docker-compose
         continue-on-error: true
@@ -467,7 +467,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.repository_owner == 'magma'
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - name: Install SwaggerHub CLI
         run: npm install --global swaggerhub-cli
       - name: Publish SwaggerHub API
@@ -516,7 +516,7 @@ jobs:
     env:
       MAGMA_ROOT: "${{ github.workspace }}"
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - name: Run docker compose
         id: cwag-docker-compose
         continue-on-error: true
@@ -630,7 +630,7 @@ jobs:
     env:
       MAGMA_ROOT: "${{ github.workspace }}"
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - name: Run docker compose build
         env:
           DOCKER_REGISTRY: cwf_
@@ -719,7 +719,7 @@ jobs:
     env:
       MAGMA_ROOT: "${{ github.workspace }}"
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - uses: actions/setup-python@7f80679172b057fc5e90d70d197929d454754a5a # pin@v2
         with:
           python-version: '3.8.10'
@@ -821,7 +821,7 @@ jobs:
       MAGMA_ROOT: "${{ github.workspace }}"
       NMS_ROOT: "${{ github.workspace }}/nms"
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - name: Run docker compose
         id: nms-docker-compose
         # yamllint disable rule:line-length
@@ -906,7 +906,7 @@ jobs:
         nms-build
       ]
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - uses: actions/setup-python@7f80679172b057fc5e90d70d197929d454754a5a # pin@v2
         with:
           python-version: '3.8.10'
@@ -936,7 +936,7 @@ jobs:
     env:
       MAGMA_ROOT: "${{ github.workspace }}"
     steps:
-      - uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # pin@v2
+      - uses: actions/checkout@e6d535c99c374d0c3f6d8cd8086a57b43c6c700a # pin@v2
       - name: Prepare tools
         working-directory: "${{ github.workspace }}/dp"
         run: |
