@@ -28,17 +28,17 @@ jobs:
     steps:
       - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # pin@v3
       - name: Cache magma-deb-box
-        uses: actions/cache@0865c47f36e68161719c5b124609996bb5c40129 # pin@v3
+        uses: actions/cache@0ff05979343fa0bc49c99a4fea5dae9f0964e94f # pin@v3
         with:
           path: ~/.vagrant.d/boxes/magmacore-VAGRANTSLASH-magma_deb
           key: vagrant-box-magma-deb-focal64-20220804.0.0
       - name: Cache magma-test-box
-        uses: actions/cache@0865c47f36e68161719c5b124609996bb5c40129 # pin@v3
+        uses: actions/cache@0ff05979343fa0bc49c99a4fea5dae9f0964e94f # pin@v3
         with:
           path: ~/.vagrant.d/boxes/magmacore-VAGRANTSLASH-magma_test
           key: vagrant-box-magma-test
       - name: Cache magma-trfserver-box
-        uses: actions/cache@0865c47f36e68161719c5b124609996bb5c40129 # pin@v3
+        uses: actions/cache@0ff05979343fa0bc49c99a4fea5dae9f0964e94f # pin@v3
         with:
           path: ~/.vagrant.d/boxes/magmacore-VAGRANTSLASH-magma_trfserver
           key: vagrant-box-magma-trfserver-v20220722
