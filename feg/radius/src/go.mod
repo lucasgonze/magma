@@ -14,7 +14,7 @@ require (
 	github.com/alicebob/miniredis v2.5.0+incompatible
 	github.com/donovanhide/eventsource v0.0.0-20171031113327-3ed64d21fb0b
 	github.com/go-redis/redis v6.15.5+incompatible
-	github.com/google/uuid v1.1.2
+	github.com/google/uuid v1.3.0
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/prometheus/client_golang v0.9.3
@@ -22,9 +22,9 @@ require (
 	go.opencensus.io v0.21.0
 	go.uber.org/atomic v1.7.0
 	go.uber.org/zap v1.18.1
-	golang.org/x/net v0.0.0-20200822124328-c89045814202
-	google.golang.org/grpc v1.43.0
-	google.golang.org/protobuf v1.26.0
+	golang.org/x/net v0.5.0
+	google.golang.org/grpc v1.53.0
+	google.golang.org/protobuf v1.28.1
 	magma/orc8r/lib/go v0.0.0
 )
 
@@ -45,9 +45,9 @@ require (
 	github.com/stretchr/objx v0.1.1 // indirect
 	github.com/yuin/gopher-lua v0.0.0-20190514113301-1cd887cd7036 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
-	golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd // indirect
-	golang.org/x/text v0.3.0 // indirect
-	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
+	golang.org/x/sys v0.4.0 // indirect
+	golang.org/x/text v0.6.0 // indirect
+	google.golang.org/genproto v0.0.0-20230110181048-76db0878b65f // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
 
