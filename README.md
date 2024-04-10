@@ -21,6 +21,21 @@ Magma is an open-source software platform that gives network operators an open, 
 - Enabling federation between existing MNOs and new infrastructure providers for expanding rural infrastructure
 - Allowing operators who are constrained with licensed spectrum to add capacity and reach by using Wi-Fi and CBRS
 
+## Documentation
+
+- [Magma Website](https://magmacore.org/): Project landing page
+- [Docs](https://magma.github.io/magma/docs/basics/introduction.html): Deployment, configuration and usage information
+- [Code](https://github.com/magma): Source code
+- [Contributing](https://github.com/magma/magma/wiki/Contributor-Guide): Contributor Guide
+- [Wiki](https://wiki.magmacore.org/): Meeting notes and project team resources
+- [Rewards Program](REWARDS_PROGRAM.md): How to participate in the Magma rewards program
+
+## Join the Magma community
+
+Direct specific questions to the [GitHub Discussions page](https://github.com/magma/magma/discussions). Your question might already have an answer!
+
+For real-time discussion join the community on Slack: [magmacore workspace](https://slack.magmacore.org/).
+
 ## Magma Architecture
 
 The figure below shows the high-level Magma architecture. Magma is 3GPP generation (2G, 3G, 4G or upcoming 5G networks) and access network agnostic (cellular or WiFi). It can flexibly support a radio access network with minimal development and deployment effort.
@@ -35,26 +50,9 @@ Magma has three major components
 
 ![Magma architecture diagram](docs/readmes/assets/magma_overview.png?raw=true "Magma Architecture")
 
-## Documentation
-
-- [Magma Website](https://magmacore.org/): Project landing page
-- [Docs](https://magma.github.io/magma/docs/basics/introduction.html): Deployment, configuration and usage information
-- [Code](https://github.com/magma): Source code
-- [Contributing](https://github.com/magma/magma/wiki/Contributor-Guide): Contributor Guide
-- [Wiki](https://wiki.magmacore.org/): Meeting notes and project team resources
-- [Rewards Program](REWARDS_PROGRAM.md): How to participate in the Magma rewards program
-
-## Join the Magma community
-
-See the [Community](https://magmacore.org/join-the-open-source-community/) page for entry points.
-
-Start by joining the community on Slack: [magmacore workspace](https://slack.magmacore.org/).
-
-Direct specific questions to the [GitHub Discussions page](https://github.com/magma/magma/discussions). Your question might already have an answer!
-
 ## License
 
-Magma is BSD License licensed, as found in the LICENSE file.
+Magma is under the BSD License, as found in the LICENSE file.
 
 The EPC originates from OAI (OpenAirInterface Software Alliance) and is offered under the same BSD-3-Clause License.
 
@@ -70,3 +68,6 @@ We wish to acknowledge valuable disclosures by the following security researcher
 
 - Guarang Maheta
 - Phi Trần
+
+We are especially grateful for the remarkable security research by Nathaniel Bennett of the University of Florida.
+
